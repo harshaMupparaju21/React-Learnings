@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsha's React Practice</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- <div id = "root">
+        <h1>Hello Everyone</h1>
+    </div> -->
+    <div id = "root">
+        <h1>This content will be replaced by parent tag in App.js</h1>
+    </div>
+    <!-- using JS -->
+    <!-- <script>
+        const heading = document.createElement("h1");
+        heading.innerHTML = "Hello everyone From Harsha using JS";
+
+        const root = document.getElementById('root');
+        root.appendChild(heading);
+    </script> -->
+
+
+    <!-- using React: -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- <script>
+        const heading = React.createElement("h1", {id : "heading"}, "Creating h1 tag using React");
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(heading);
+    </script> -->
+
+    <!-- separating React code into App.js -->
+    <!-- Order of these scripts is important. If we put the below script above CDN links, we get error. -->
+    <script src = 'App.js'></script>
+
+</body>
+</html>
